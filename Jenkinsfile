@@ -106,7 +106,7 @@ pipeline{
         
         stage("Build java app"){
             steps{
-                sh "mvn clean package install -Dmaven.test.skip=${TEST}"
+                sh "mvn clean package install"
             }
         }
         stage("build java app image"){
